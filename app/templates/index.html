@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Oxyx Builds{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Build a Boat for Treasure</h1>
+    <p>Secure repository for .build files</p>
+    {% if not session.user_id %}
+    <div class="hero-buttons">
+        <a href="/login" class="btn btn-primary">Login</a>
+        <a href="/register" class="btn btn-secondary">Register</a>
+    </div>
+    {% endif %}
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <h3>🔒 Secure Upload</h3>
+        <p>All files validated before upload</p>
+    </div>
+    <div class="feature-card">
+        <h3>🛡️ WHID System</h3>
+        <p>Single session only - maximum security</p>
+    </div>
+    <div class="feature-card">
+        <h3>⚡ Fast Download</h3>
+        <p>Direct download links</p>
+    </div>
+</div>
+{% endblock %}
