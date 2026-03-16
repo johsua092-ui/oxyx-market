@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Owner Dashboard - Oxyx Builds{% endblock %}
+
+{% block content %}
+<div class="admin-dashboard">
+    <h1>Owner Dashboard</h1>
+    
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Users</h3>
+            <p class="stat-value">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Active Sessions</h3>
+            <p class="stat-value">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total Builds</h3>
+            <p class="stat-value">0</p>
+        </div>
+    </div>
+    
+    <div class="admin-section">
+        <h2>User Management</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Last IP</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="6" style="text-align: center;">No users yet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="admin-section">
+        <h2>Active Staff Sessions</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Staff</th>
+                    <th>IP Address</th>
+                    <th>Last Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" style="text-align: center;">No active staff</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="admin-section">
+        <h2>IP Blacklist</h2>
+        <form class="blacklist-form">
+            <input type="text" placeholder="IP Address" required>
+            <input type="text" placeholder="Reason" required>
+            <button type="submit" class="btn btn-danger">Blacklist IP</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
