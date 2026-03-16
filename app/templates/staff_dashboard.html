@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Staff Dashboard - Oxyx Builds{% endblock %}
+
+{% block content %}
+<div class="staff-dashboard">
+    <h1>Staff Dashboard</h1>
+    
+    <div class="admin-section">
+        <h2>Pending Reports</h2>
+        <div class="reports-list">
+            <p>No pending reports</p>
+        </div>
+    </div>
+    
+    <div class="admin-section">
+        <h2>Recent Builds</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Uploader</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" style="text-align: center;">No builds yet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
